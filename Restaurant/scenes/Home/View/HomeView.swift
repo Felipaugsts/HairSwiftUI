@@ -24,16 +24,23 @@ struct HomeView: View {
                             FoodItem()
                             FoodItem()
                             FoodItem()
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
                         }
                     }
                     Text("Melhores Restaurantes")
                         .font(.title2)
                         .padding(.top, 20)
                     ScrollView(.vertical,  showsIndicators: false) {
-                        ExtractedView()
-                        ExtractedView()
-                        ExtractedView()
-                        ExtractedView()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+                        BestRestaurantCard()
+ 
                     }
                 Spacer()
                 }
@@ -60,7 +67,7 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-struct ExtractedView: View {
+struct BestRestaurantCard: View {
     var body: some View {
         HStack {
             Image("food")
