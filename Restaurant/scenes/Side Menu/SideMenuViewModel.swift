@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum SideMenuViewModel: Int, CaseIterable {
     case profile
@@ -37,6 +38,20 @@ enum SideMenuViewModel: Int, CaseIterable {
             return "bell"
         case .Logout:
             return "arrow.left.square"
+        }
+    }
+    
+    var views: some View {
+        switch self {
+            
+        case .profile:
+            return SingIn()
+        case .Favorites:
+            return SingIn()
+        case .Settings:
+            return SingIn()
+        case .Logout:
+             return SingIn()
         }
     }
     

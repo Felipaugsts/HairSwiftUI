@@ -18,7 +18,7 @@ struct SideMenuHeaderView: View {
                 }
             }) {
                 Image(systemName: "xmark")
-                    .frame(width: 42, height: 42)
+                    .frame(width: 52, height: 52)
                     .foregroundColor(.white)
                     .padding()
             }

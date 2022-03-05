@@ -25,6 +25,7 @@ struct ContentView: View {
                     .allowsHitTesting(isShowing ? false : true)
                     .shadow(radius: isShowing ? 10 : 0)
                     
+                    
                 
                     
             .navigationBarItems(leading:

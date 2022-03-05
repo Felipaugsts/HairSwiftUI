@@ -19,6 +19,7 @@
 		C5CCB37D27D29475000374AF /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCB37C27D29475000374AF /* SideMenuOptionView.swift */; };
 		C5CCB37F27D297B9000374AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCB37E27D297B9000374AF /* HomeView.swift */; };
 		C5CCB38127D29F8F000374AF /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCB38027D29F8F000374AF /* SideMenuViewModel.swift */; };
+		C5CCB38427D2DEE9000374AF /* SingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CCB38327D2DEE9000374AF /* SingIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C5CCB37C27D29475000374AF /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		C5CCB37E27D297B9000374AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C5CCB38027D29F8F000374AF /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		C5CCB38327D2DEE9000374AF /* SingIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		C5CCB36C27D19EFB000374AF /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C5CCB38227D2DEC6000374AF /* Authentication */,
 				C5CCB37727D290C5000374AF /* Side Menu */,
 				C5CCB36F27D19F20000374AF /* Components */,
 				C5CCB37227D1A092000374AF /* Cart */,
@@ -137,6 +140,14 @@
 				C5CCB38027D29F8F000374AF /* SideMenuViewModel.swift */,
 			);
 			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		C5CCB38227D2DEC6000374AF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C5CCB38327D2DEE9000374AF /* SingIn.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				C5CCB37127D19F37000374AF /* FoodItem.swift in Sources */,
 				C5CCB37627D2591C000374AF /* Search.swift in Sources */,
 				C5CCB35F27D18708000374AF /* RestaurantApp.swift in Sources */,
+				C5CCB38427D2DEE9000374AF /* SingIn.swift in Sources */,
 				C5CCB38127D29F8F000374AF /* SideMenuViewModel.swift in Sources */,
 				C5CCB37427D1A0A1000374AF /* Cart.swift in Sources */,
 			);

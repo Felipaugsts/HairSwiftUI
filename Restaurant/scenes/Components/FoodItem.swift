@@ -7,15 +7,10 @@
 
 import SwiftUI
 
-
 struct FoodItem: View {
     var body: some View {
+        
         VStack (alignment: .center) {
-            HStack {
-                Text("Very hot")
-                    .font(.footnote)
-                    .foregroundColor(.primary)
-            }
             Image("food")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -23,19 +18,19 @@ struct FoodItem: View {
                 .shadow(radius: 8)
             
             Text("Classic")
-                .font(.headline)
+                .font(.title2)
             Text("Platter")
                 .foregroundColor(.secondary)
                 .font(.subheadline)
                 .padding(.bottom, 12)
             HStack {
             Text("$12.99")
-                .font(.title)
+                    .font(.title3)
                 Spacer()
                 Button(action: {} ) {
-                    Image(systemName: "cart")
+                    Image(systemName: "plus.circle")
                         .resizable()
-                        .frame(width: 25, height: 25)
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.black)
 //                    Image(systemName: "plus.circle")
 //                        .resizable()
@@ -45,9 +40,10 @@ struct FoodItem: View {
        
             }
             .padding([.leading, .trailing], 15)
-        }.frame(width: 180, height: 250)
-            .background(Color.secondary.opacity(0.3))
+        }.frame(width: 170, height: 210)
+            .background(Color.secondary.opacity(0.2))
             .cornerRadius(12)
+            
             
     }
 }
