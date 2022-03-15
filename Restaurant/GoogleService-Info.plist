@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>303969333936-s1lubsuatigjrl2hvusc21u4v6dpsgl6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.303969333936-s1lubsuatigjrl2hvusc21u4v6dpsgl6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfduN9w7flWaJPxAoO-9UjNCCWWMZyWtg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>303969333936</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Felipe.Restaurant</string>
+	<key>PROJECT_ID</key>
+	<string>restaurant-8b45a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>restaurant-8b45a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:303969333936:ios:14f6d8299c3ce6df46c175</string>
+</dict>
+</plist>

@@ -12,7 +12,6 @@ enum SideMenuViewModel: Int, CaseIterable {
     case profile
     case Favorites
     case Settings
-    case Logout
 
     var title: String {
         switch self {
@@ -23,8 +22,6 @@ enum SideMenuViewModel: Int, CaseIterable {
             return "Favorites"
         case .Settings:
             return "Settings"
-        case .Logout:
-            return "Logout"
         }
     }
     var imageName: String {
@@ -36,8 +33,6 @@ enum SideMenuViewModel: Int, CaseIterable {
             return "heart"
         case .Settings:
             return "bell"
-        case .Logout:
-            return "arrow.left.square"
         }
     }
     
@@ -50,8 +45,6 @@ enum SideMenuViewModel: Int, CaseIterable {
             return SingIn()
         case .Settings:
             return SingIn()
-        case .Logout:
-             return SingIn()
         }
     }
     

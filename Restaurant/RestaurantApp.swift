@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import Firebase
 
 @main
 struct RestaurantApp: App {
+  
+    init() {
+      FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userSettings())
         }
     }
 }
