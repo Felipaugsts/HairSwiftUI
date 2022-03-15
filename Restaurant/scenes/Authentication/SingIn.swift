@@ -17,17 +17,18 @@ struct SingIn: View {
     
         var body: some View {
             ZStack {
-                
+        NavigationView {
             VStack (spacing: 25) {
             
            Text("Sign in")
                     .font(.title)
                     .fontWeight(.semibold)
+                Spacer()
                 
                 ULineTextField(fieldText: "Email", field: $Emailfield)
                 UnderLineSecurityField(field: $Passwordfield, fieldText: "password")
                
-                
+                Spacer()
                 Button(action: {
                     
                     if !Emailfield.isEmpty && !Passwordfield.isEmpty {
@@ -57,12 +58,8 @@ struct SingIn: View {
                 .cornerRadius(10)
                 .opacity(loading ? 0.4 : 1.0)
 
-                
-                Button(action: {}) {
-                    Text("Register")
-                        .foregroundColor(.blue)
-                        .font(.title2)
-                }
+                NavigationLink("Register", destination: Register())
+       
                 
                 .frame(width: UIScreen.main.bounds.width)
                 .padding([.leading, .trailing], -10)
@@ -74,7 +71,7 @@ struct SingIn: View {
                 
             }
             .background(.white.opacity(0.5))
-            .frame(height: 450)
+            .frame(height: 350)
             }
           
             .edgesIgnoringSafeArea(.top)
@@ -82,6 +79,7 @@ struct SingIn: View {
             
         }
     }
+}
 
 struct SingIn_Previews: PreviewProvider {
     static var previews: some View {

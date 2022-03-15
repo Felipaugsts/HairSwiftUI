@@ -29,6 +29,7 @@
 		C5DA98EC27E10EF100738251 /* UnderLineSecurityField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98EB27E10EF100738251 /* UnderLineSecurityField.swift */; };
 		C5DA98EE27E1104800738251 /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98ED27E1104800738251 /* HomeViewNavigation.swift */; };
 		C5DA98F027E1119A00738251 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98EF27E1119A00738251 /* UserSettings.swift */; };
+		C5DA98F227E11CC500738251 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98F127E11CC500738251 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		C5DA98EB27E10EF100738251 /* UnderLineSecurityField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLineSecurityField.swift; sourceTree = "<group>"; };
 		C5DA98ED27E1104800738251 /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
 		C5DA98EF27E1119A00738251 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		C5DA98F127E11CC500738251 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				C5CCB38327D2DEE9000374AF /* SingIn.swift */,
 				C5D1DA7D27D7C175001FF35F /* View Model.swift */,
+				C5DA98F127E11CC500738251 /* Register.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CCB37F27D297B9000374AF /* HomeView.swift in Sources */,
+				C5DA98F227E11CC500738251 /* Register.swift in Sources */,
 				C5DA98EE27E1104800738251 /* HomeViewNavigation.swift in Sources */,
 				C5CCB37927D290D8000374AF /* SideMenuView.swift in Sources */,
 				C5CCB37D27D29475000374AF /* SideMenuOptionView.swift in Sources */,

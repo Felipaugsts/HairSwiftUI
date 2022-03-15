@@ -6,15 +6,26 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class userSettings: ObservableObject {
-    
+
     @Published var isLoggedIn: Bool {
         didSet {
-            print("user logged in setting up users informations")
+            let user = Auth.auth().addStateDidChangeListener { auth, user in
+                if let user = user {
+                    guard let name = user.displayName else { return }
+                    UserDefaults.standard.set(name, forKey: "username")
+                } else {
+                    UserDefaults.standard.removeObject(forKey: "username")
+                }
+            }
+         
+            
         }
     }
     init() {
         self.isLoggedIn = false
+        
     }
 }

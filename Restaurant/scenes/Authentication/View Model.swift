@@ -34,4 +34,24 @@ class AuthViewModel  {
             }
         }
     }
+    func register(email: String, password: String, displayName: String, Completion: @escaping (Bool) -> ()) {
+        Auth.auth().createUser(withEmail: email, password: password) { AuthDataResult, Error in
+              if let user = AuthDataResult?.user {
+                  
+                  let changeRequest = user.createProfileChangeRequest()
+                  changeRequest.displayName = displayName
+                  changeRequest.commitChanges { error in
+                      if error == nil {
+                          print("success")
+                      } else {
+                          print("error", error)
+                      }
+                  }
+              Completion(true)
+                  
+              } else {
+              Completion(false)
+              }
+          }
+    }
 }

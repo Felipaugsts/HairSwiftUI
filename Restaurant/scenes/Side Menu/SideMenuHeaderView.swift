@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SideMenuHeaderView: View {
     @Binding var isShowing: Bool
-    
+    @State var userName = ""
     var body: some View {
         ZStack (alignment: .topTrailing) {
             Button(action: {
@@ -31,7 +31,7 @@ struct SideMenuHeaderView: View {
                     .clipShape(Circle())
                     .padding(.bottom, 16)
                 HStack{
-                Text("Felipe Augusto")
+                    Text(userName)
                     .font(.system(size: 24, weight: .semibold))
                 Spacer()
                 }
@@ -39,8 +39,14 @@ struct SideMenuHeaderView: View {
             }
             .padding()
         }
-        
-        
+        .onAppear(perform: getUserName)
+    }
+    func getUserName() {
+        let defaults = UserDefaults.standard
+        if defaults.object(forKey: "username") != nil {
+            guard let name = defaults.object(forKey: "username") as? String else { return }
+            self.userName = name
+        }
     }
 }
 
