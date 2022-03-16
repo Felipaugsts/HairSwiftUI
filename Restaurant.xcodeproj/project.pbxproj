@@ -37,7 +37,7 @@
 		01DBC81A92DD01BFD9FFAC6D /* Pods-Restaurant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant.release.xcconfig"; path = "Target Support Files/Pods-Restaurant/Pods-Restaurant.release.xcconfig"; sourceTree = "<group>"; };
 		6448747E9EDC4C4447EE7E1E /* Pods-Restaurant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant.debug.xcconfig"; path = "Target Support Files/Pods-Restaurant/Pods-Restaurant.debug.xcconfig"; sourceTree = "<group>"; };
 		72185796D85D4C12D23FB04E /* Pods_Restaurant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5CCB35B27D18707000374AF /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CCB35B27D18707000374AF /* Hair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CCB35E27D18708000374AF /* RestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApp.swift; sourceTree = "<group>"; };
 		C5CCB36027D18708000374AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5CCB36227D18709000374AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		C5CCB35227D18707000374AF = {
 			isa = PBXGroup;
 			children = (
-				C5CCB35D27D18708000374AF /* Restaurant */,
+				C5CCB35D27D18708000374AF /* Hair */,
 				C5CCB35C27D18707000374AF /* Products */,
 				5D3B968393D25C48FCC495D1 /* Pods */,
 				FBDB5A637A089FE96AA10CC7 /* Frameworks */,
@@ -97,12 +97,12 @@
 		C5CCB35C27D18707000374AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5CCB35B27D18707000374AF /* Restaurant.app */,
+				C5CCB35B27D18707000374AF /* Hair.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5CCB35D27D18708000374AF /* Restaurant */ = {
+		C5CCB35D27D18708000374AF /* Hair */ = {
 			isa = PBXGroup;
 			children = (
 				C5D1DA8227D7C3A6001FF35F /* Injection */,
@@ -114,7 +114,7 @@
 				C5CCB36227D18709000374AF /* Assets.xcassets */,
 				C5CCB36427D18709000374AF /* Preview Content */,
 			);
-			path = Restaurant;
+			path = Hair;
 			sourceTree = "<group>";
 		};
 		C5CCB36427D18709000374AF /* Preview Content */ = {
@@ -231,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5CCB35A27D18707000374AF /* Restaurant */ = {
+		C5CCB35A27D18707000374AF /* Hair */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5CCB36927D18709000374AF /* Build configuration list for PBXNativeTarget "Restaurant" */;
+			buildConfigurationList = C5CCB36927D18709000374AF /* Build configuration list for PBXNativeTarget "Hair" */;
 			buildPhases = (
 				2C7FBB43856C4EC276773949 /* [CP] Check Pods Manifest.lock */,
 				C5CCB35727D18707000374AF /* Sources */,
@@ -245,9 +245,9 @@
 			);
 			dependencies = (
 			);
-			name = Restaurant;
+			name = Hair;
 			productName = Restaurant;
-			productReference = C5CCB35B27D18707000374AF /* Restaurant.app */;
+			productReference = C5CCB35B27D18707000374AF /* Hair.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +278,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5CCB35A27D18707000374AF /* Restaurant */,
+				C5CCB35A27D18707000374AF /* Hair */,
 			);
 		};
 /* End PBXProject section */
@@ -493,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Restaurant/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Hair/Preview Content\"";
 				DEVELOPMENT_TEAM = 9954PN6WK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -508,7 +508,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Felipe.Restaurant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hair;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Restaurant/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Hair/Preview Content\"";
 				DEVELOPMENT_TEAM = 9954PN6WK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -538,7 +538,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Felipe.Restaurant;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hair;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5CCB36927D18709000374AF /* Build configuration list for PBXNativeTarget "Restaurant" */ = {
+		C5CCB36927D18709000374AF /* Build configuration list for PBXNativeTarget "Hair" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5CCB36A27D18709000374AF /* Debug */,
