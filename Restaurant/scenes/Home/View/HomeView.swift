@@ -16,7 +16,7 @@ struct HomeView: View {
                     NavigationLink(destination: Cart(), tag: 1, selection: $action) {
                                        EmptyView()
                                    }
-                    Text("Pratos mais pedidos")
+                    Text("Top 5 Cabelereiros em Sorocaba")
                         .font(.title2)
                         .padding(.top, 5)
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -29,7 +29,7 @@ struct HomeView: View {
                             FoodItem()
                         }
                     }
-                    Text("Melhores Restaurantes")
+                    Text("Cabelereiros em Sorocaba")
                         .font(.title2)
                         .padding(.top, 20)
                     ScrollView(.vertical,  showsIndicators: false) {
@@ -70,12 +70,15 @@ struct HomeView_Previews: PreviewProvider {
 struct BestRestaurantCard: View {
     var body: some View {
         HStack {
-            Image("food")
+            Image("hairlogo")
                 .resizable()
-                .frame(width: 60, height: 60)
+                .frame(width: 50, height: 60)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 2)
             
             VStack (alignment: .leading) {
-                Text("Agua Doce Cachacaria - Tatuí")
+                Text("Barbearia do seu João - Tatuí")
                     .font(.callout)
                 HStack {
                     Image(systemName: "star.fill")
@@ -88,7 +91,7 @@ struct BestRestaurantCard: View {
                         .fontWeight(.semibold)
                         .font(.footnote)
                     
-                    Text("Brasileira")
+                    Text("Jardim Wanderley")
                         .font(.footnote)
                         .foregroundColor(.black.opacity(0.8))
                         .fontWeight(.regular)
@@ -104,14 +107,14 @@ struct BestRestaurantCard: View {
                         .font(.footnote)
                         .foregroundColor(.gray)
                     
-                    Text("Grátis")
+                    Text("R$: 25.00")
                         .padding(.leading, 5)
                         .font(.footnote)
                         .foregroundColor(.green)
                 }
             }
             Spacer()
-            Image(systemName: "heart.fill")
+            Image(systemName: "clock.fill")
                 .resizable()
                 .frame(width: 20, height: 20)
                 .foregroundColor(.gray.opacity(0.5))

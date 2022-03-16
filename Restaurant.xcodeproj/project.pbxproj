@@ -30,6 +30,7 @@
 		C5DA98EE27E1104800738251 /* HomeViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98ED27E1104800738251 /* HomeViewNavigation.swift */; };
 		C5DA98F027E1119A00738251 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98EF27E1119A00738251 /* UserSettings.swift */; };
 		C5DA98F227E11CC500738251 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA98F127E11CC500738251 /* Register.swift */; };
+		C5E49AB527E25BF8003AB608 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E49AB427E25BF8003AB608 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		C5DA98ED27E1104800738251 /* HomeViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewNavigation.swift; sourceTree = "<group>"; };
 		C5DA98EF27E1119A00738251 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		C5DA98F127E11CC500738251 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		C5E49AB427E25BF8003AB608 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C5D1DA7F27D7C232001FF35F /* Model */,
 				C5D1DA7B27D7BEC6001FF35F /* GoogleService-Info.plist */,
 				C5CCB35E27D18708000374AF /* RestaurantApp.swift */,
+				C5CCB36F27D19F20000374AF /* Components */,
 				C5CCB36C27D19EFB000374AF /* scenes */,
 				C5CCB36227D18709000374AF /* Assets.xcassets */,
 				C5CCB36427D18709000374AF /* Preview Content */,
@@ -125,10 +128,10 @@
 		C5CCB36C27D19EFB000374AF /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C5E49AB327E25BEA003AB608 /* Profile */,
 				C5CCB36027D18708000374AF /* ContentView.swift */,
 				C5CCB38227D2DEC6000374AF /* Authentication */,
 				C5CCB37727D290C5000374AF /* Side Menu */,
-				C5CCB36F27D19F20000374AF /* Components */,
 				C5CCB37227D1A092000374AF /* Cart */,
 				C5CCB36D27D19F11000374AF /* Home */,
 			);
@@ -207,6 +210,14 @@
 				C5D1DA8327D7C3B3001FF35F /* Container.swift */,
 			);
 			path = Injection;
+			sourceTree = "<group>";
+		};
+		C5E49AB327E25BEA003AB608 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C5E49AB427E25BF8003AB608 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		FBDB5A637A089FE96AA10CC7 /* Frameworks */ = {
@@ -344,6 +355,7 @@
 				C5CCB37627D2591C000374AF /* Search.swift in Sources */,
 				C5D1DA8127D7C244001FF35F /* API.swift in Sources */,
 				C5DA98EC27E10EF100738251 /* UnderLineSecurityField.swift in Sources */,
+				C5E49AB527E25BF8003AB608 /* ProfileView.swift in Sources */,
 				C5CCB35F27D18708000374AF /* RestaurantApp.swift in Sources */,
 				C5CCB38427D2DEE9000374AF /* SingIn.swift in Sources */,
 				C5DA98F027E1119A00738251 /* UserSettings.swift in Sources */,

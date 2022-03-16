@@ -38,13 +38,19 @@ enum SideMenuViewModel: Int, CaseIterable {
     
     var views: some View {
         switch self {
-            
+//
+//        case .profile :
+//            return ProfileView()
+//        case .Favorites:
+//            return SingIn()
+//        case .Settings:
+//            return SingIn()
         case .profile:
-            return SingIn()
+            return ProfileView()
         case .Favorites:
-            return SingIn()
+            return ProfileView()
         case .Settings:
-            return SingIn()
+            return ProfileView()
         }
     }
     
